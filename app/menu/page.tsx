@@ -5,6 +5,7 @@ import {
   DocumentPlusIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import clsx from 'clsx';
 
 export const metadata: Metadata = {
   title: 'Menu',
@@ -19,19 +20,19 @@ type ButtonItem = {
 
 const buttonsList: ButtonItem[] = [
   {
-    Icon: <DocumentPlusIcon className="h-12 w-auto" />,
+    Icon: <DocumentPlusIcon className="w-7 inline-block" />,
     action: 'Criar/Atualizar',
     description: 'Crie novas planilhas ou atualize as existentes',
     nextUrl: '/create',
   },
   {
-    Icon: <PaperAirplaneIcon className="h-12 w-auto" />,
+    Icon: <PaperAirplaneIcon className="w-7 inline-block" />,
     action: 'Enviar',
     description: 'Envie algumas ou todas planilhas',
     nextUrl: '/send',
   },
   {
-    Icon: <TrashIcon className="h-12 w-auto" />,
+    Icon: <TrashIcon className="w-7 inline-block" />,
     action: 'Deletar',
     description: 'Delete algumas ou todas planilhas',
     nextUrl: '/delete',
@@ -47,7 +48,10 @@ export default function Menu() {
           key={action}
         >
           <Link
-            className="flex flex-row grow gap-8 justify-center items-center w-[40vw] min-w-[600px] py-4 px-8 border border-commonBorder rounded-md text-xl tracking-wide hover:bg-brandHover hover:text-brandText hover:border-brandHover text-center"
+            className={clsx(
+              'w-[40vw] min-w-[600px] py-12 px-24 text-xl',
+              'button',
+            )}
             href={nextUrl}
           >
             {Icon}

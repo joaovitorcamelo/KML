@@ -11,7 +11,7 @@ export default function Page() {
     <ActionTemplate
       content="Criar/Atualizar"
       descriptionAll="Cria/Atualiza uma planilha para cada ID existente em ‘KML’"
-      Icon={<DocumentPlusIcon className="w-10 h-auto inline-block" />}
+      Icon={<DocumentPlusIcon className="w-7 inline-block" />}
     />
   );
 }

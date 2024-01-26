@@ -5,3 +5,43 @@
 :root {
   background-color: #ffffff;
 }
+
+.button {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #cbc5c9;
+  border-radius: 6px;
+
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  background-color: #f1ebee;
+  color: #310e1d;
+  border-color:#f1ebee;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Largura da scrollbar */
+  position: relative;
+}
+
+::-webkit-scrollbar-track {
+  background: #ececec; /* Cor de fundo da trilha da scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  position: absolute;
+  background: #888; /* Cor da scrollbar */
+  border-radius: 6px; /* Borda arredondada */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor da scrollbar ao passar o mouse */
+}

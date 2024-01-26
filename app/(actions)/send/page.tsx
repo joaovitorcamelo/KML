@@ -11,7 +11,7 @@ export default function Page() {
     <ActionTemplate
       content="Enviar"
       descriptionAll="Envia uma planilha para o e-mail de cada ID existente em ‘KML’"
-      Icon={<PaperAirplaneIcon className="w-10 h-auto inline-block" />}
+      Icon={<PaperAirplaneIcon className="w-7 inline-block" />}
     />
   );
 }

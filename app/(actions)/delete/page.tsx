@@ -11,7 +11,7 @@ export default function Page() {
     <ActionTemplate
       content="Deletar"
       descriptionAll="Deleta a planilha de cada ID existente em ‘KML’"
-      Icon={<TrashIcon className="w-10 h-auto inline-block" />}
+      Icon={<TrashIcon className="w-7 inline-block" />}
     />
   );
 }

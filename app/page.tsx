@@ -9,6 +9,7 @@ export default function Home() {
           G
         </button>
       </main>
+
       <footer className="flex flex-col items-center gap-1 mt-48 text-[#8A8A8A]">
         <p>
           Esse aplicativo foi criado por <strong>João Vitor Camelo</strong>.
